@@ -19,14 +19,75 @@
   </head>
 
   <body class="text-[#3C2A21]">
-    <header class="">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Our Dessert</li>
-          <li>Feedback</li>
-          <li>Contact Us</li>
+    <header
+      class="bg-[#FFF7F2] shadow-md px-4 py-3 flex items-center justify-between"
+    >
+      <section class="flex float-left items-center">
+        <figure>
+          <img
+            src="assets/images/logo-img.png"
+            alt="logo"
+            class="w-auto h-10"
+          />
+        </figure>
+        <figure>
+          <img src="assets/images/logo-text.png" alt="text logo" class="w-20" />
+        </figure>
+      </section>
+
+      <input id="menu-toggle" type="checkbox" class="peer hidden" />
+      <label
+        for="menu-toggle"
+        class="md:hidden cursor-pointer p-2 rounded hover:bg-gray-100 transition"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 text-gray-800 peer-checked:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <!-- Close Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6 text-gray-800 hidden peer-checked:block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </label>
+      <nav
+        class="hidden peer-checked:flex flex-col md:flex md:items-center md:gap-8 absolute top-16 left-0 w-full bg-[#FFF7F2] md:static md:w-auto md:flex-row shadow-md md:shadow-none py-4 md:py-0"
+      >
+        <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+          <li><a href="#" class="hover:text-pink-600 font-medium">Home</a></li>
+          <li>
+            <a href="#" class="hover:text-pink-600 font-medium">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 font-medium">Our Dessert</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 font-medium">Feedback</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 font-medium">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
