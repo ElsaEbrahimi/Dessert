@@ -1,5 +1,19 @@
 # Front-end Style Guide
 
+## Daria style:
+
+Color palette (delicious, cozy):
+
+Light background: #FFF7F2 (warm cream)
+
+Main accent: #B5651D (chocolate-caramel)
+
+Secondary accent: #E85C5C (berry pink)
+
+Text: #3C2A21
+
+Secondary background (e.g., in the footer): #F3E9E2 Font: Primary — Poppins or Inter (easily integrated into Tailwind)
+
 ## Layout
 
 The designs were created to the following widths:
