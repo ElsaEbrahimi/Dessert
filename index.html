@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dessert</title>
+    <title>Sweet Galaxy Desserts</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -12,23 +13,101 @@
       body {
         font-family: "Poppins", sans-serif;
       }
+      :root {
+        --pink: #e4717a; /* primary buttons, links */
+        --cream: #fff6f2; /* backgrounds */
+        --coffee: #3a2e2a; /* main text */
+        --cookie: #6b5c55; /* secondary text */
+        --footer-bg: #fdeae7;
+      }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Add this to your <head> section -->
   </head>
 
-  <body class="text-[#3C2A21]">
-    <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Our Dessert</li>
-          <li>Feedback</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
+  <body class="bg-[var(--cream)] text-[var(--coffee)]">
+    <!-- HEADER -->
+    <header
+      class="sticky top-0 z-50 bg-white/70 backdrop-blur-sm shadow-sm transition"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-5 py-3"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="assets/images/logo.png"
+            alt="Sweet Galaxy Logo"
+            class="h-20 md:h-24 w-auto"
+          />
+        </div>
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden md:flex space-x-6 text-base font-medium text-[var(--coffee)]"
+        >
+          <a href="#" class="hover:text-[var(--pink)] transition">Home</a>
+          <a href="#about" class="hover:text-[var(--pink)] transition"
+            >About Us</a
+          >
+          <a href="#desserts" class="hover:text-[var(--pink)] transition"
+            >Desserts</a
+          >
+          <a href="#testimonials" class="hover:text-[var(--pink)] transition"
+            >Testimonials</a
+          >
+          <a href="#contact" class="hover:text-[var(--pink)] transition"
+            >Contact</a
+          >
+        </nav>
+        <!-- Order Now -->
+        <a
+          href="#"
+          class="hidden md:inline-block text-white bg-[var(--pink)] px-6 py-2.5 rounded-full text-lg font-semibold shadow-md hover:opacity-90 transition"
+        >
+          Order Now
+        </a>
+
+        <!-- Burger Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            class="w-7 h-7 text-[var(--coffee)]"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="hidden md:hidden bg-white/70 backdrop-blur-sm border-t border-[var(--cream)]"
+      >
+        <nav
+          class="flex flex-col items-center py-3 space-y-3 text-sm font-medium"
+        >
+          <a href="#" class="hover:text-[var(--pink)]">Home</a>
+          <a href="#about" class="hover:text-[var(--pink)]">About Us</a>
+          <a href="#desserts" class="hover:text-[var(--pink)]">Desserts</a>
+          <a href="#testimonials" class="hover:text-[var(--pink)]"
+            >Testimonials</a
+          >
+          <a href="#contact" class="hover:text-[var(--pink)]">Contact</a>
+          <a
+            href="#"
+            class="text-white bg-[var(--pink)] px-5 py-2 rounded-full font-semibold shadow-md hover:opacity-90 transition"
+            >Order Now</a
+          >
+        </nav>
+      </div>
     </header>
     <main>
       <section id="herosection"></section>
@@ -57,5 +136,14 @@
         </ul>
       </nav>
     </footer>
+
+    <!-- JS -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
