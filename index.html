@@ -13,6 +13,7 @@
       body {
         font-family: "Poppins", sans-serif;
       }
+
       :root {
         --pink: #e4717a; /* primary buttons, links */
         --cream: #fff6f2; /* backgrounds */
@@ -120,19 +121,50 @@
         Velvet Cake Cake 4.50 Add to Cart Salted Caramel Brownie Brownie 4.50
         Add to Cart Vanilla Panna Cotta Panna Cotta 6.50 Add to Cart
       </section>
-      <section id="rating"></section>
+      <section id="feedback"></section>
       <section id="contact-us">
         Your Cart (<!-- Quantity -->) Your added items will appear here
       </section>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Our Dessert</li>
-          <li>Feedback</li>
-          <li>Contact Us</li>
+    <footer
+      class="bg-[#FDEAE7] flex justify-between px-4 py-3 space-y-4 items-center"
+    >
+      <figure>
+        <img src="assets/images/logo-img.png" alt="logo" class="h-20" />
+      </figure>
+      <nav class="">
+        <ul
+          class="grid grid-cols-2 gap-1 gap-x-4 text-sm md:grid-cols-5 md:grid-rows-1"
+        >
+          <li>
+            <a href="#" class="hover:text-[var(--pink)] hover:font-bold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about-us" class="hover:text-[var(--pink)] hover:font-bold"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#our-dessert"
+              class="hover:text-[var(--pink)] hover:font-bold"
+              >Our Dessert</a
+            >
+          </li>
+          <li>
+            <a href="#feedback" class="hover:text-[var(--pink)] hover:font-bold"
+              >Feedback</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact-us"
+              class="hover:text-[var(--pink)] hover:font-bold"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </nav>
     </footer>
