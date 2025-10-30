@@ -111,6 +111,7 @@
       </div>
     </header>
     <main>
+      <!-- HERO SECTION -->
       <section id="herosection">
         <div
           class="bg-[url('assets/images/hero-section-img.jpg')] bg-cover bg-center relative md:h-[80vh] md:bg-fixed"
@@ -177,11 +178,65 @@
         Velvet Cake Cake 4.50 Add to Cart Salted Caramel Brownie Brownie 4.50
         Add to Cart Vanilla Panna Cotta Panna Cotta 6.50 Add to Cart
       </section>
-      <section id="feedback"></section>
+      <!-- FEEDBACK SECTION -->
+      <section id="testimonials" class="bg-[FDEAE7] p-4 md:grid md:grid-cols-2">
+        <div class="md:flex md:items-center md:gap-6">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="cake"
+            class="hidden md:block md:content-center h-50"
+          />
+          <h2
+            class="text-center text-3xl font-bold mb-5 md:text-start md:content-center"
+          >
+            What Our Customers Say
+          </h2>
+        </div>
+
+        <div class="flex flex-col p-4 gap-4 md:flex-row">
+          <div
+            id="customercard"
+            class="bg-white shadow-lg flex flex-col items-center justify-center p-4 hover:scale-105"
+          >
+            <figure>
+              <img
+                src="assets/images/feedback/person1.avif"
+                alt="person1"
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </figure>
+            <p>Lukas F.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>
+              “I ordered for my birthday and everyone was amazed. Sweet Galaxy
+              really lives up to its name!”
+            </p>
+          </div>
+          <div
+            id="customercard"
+            class="bg-white shadow-lg flex flex-col items-center justify-center p-4 hover:scale-105"
+          >
+            <figure>
+              <img
+                src="assets/images/feedback/person2.avif"
+                alt="person1"
+                class="rounded-full w-20 h-20 object-cover"
+              />
+            </figure>
+            <p>Sophie M.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>
+              “These desserts are pure magic! The Vanilla Panna Cotta tasted
+              like heaven. Beautiful design and fast delivery.”
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="contact-us">
         Your Cart (<!-- Quantity -->) Your added items will appear here
       </section>
     </main>
+    <!-- FOOTER SECTION -->
     <footer
       class="bg-[#FDEAE7] flex justify-between px-4 py-3 space-y-4 items-center"
     >
@@ -198,7 +253,7 @@
             >
           </li>
           <li>
-            <a href="#about-us" class="hover:text-[var(--pink)] hover:font-bold"
+            <a href="#about" class="hover:text-[var(--pink)] hover:font-bold"
               >About Us</a
             >
           </li>
@@ -210,7 +265,9 @@
             >
           </li>
           <li>
-            <a href="#feedback" class="hover:text-[var(--pink)] hover:font-bold"
+            <a
+              href="#testimonials"
+              class="hover:text-[var(--pink)] hover:font-bold"
               >Feedback</a
             >
           </li>
